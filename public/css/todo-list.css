@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:wght@700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #153677, #4e075f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    padding: 20px 20px 50px;
+    box-sizing: border-box;
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.row-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.material-icons {
+    font-size: 24px;
+}
+
+.row-input {
+    margin-top: 5px;
+}
+
+.new-task-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin-right: -18px;
+    border-radius: 16px 0 0 16px;
+    font-size: 16px;
+}
+
+.btn-add {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 6px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-new-task{
+    display: flex;
+}
+
+.btn-add:hover {
+    background-color: #0056b3;
+}
+
+.list {
+    margin-top: 30px;
+    overflow: auto;
+    margin-top: 30px;
+    overflow-y: auto; /* Adicione um overflow-y para controlar a rolagem vertical */
+    max-height: 225px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.row-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.row-list:hover{
+    background-color: #eeeeee;
+}
+
+.row-item {
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    margin-right: 5px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    vertical-align: middle; /* Adicione esta linha */
+}
+
+
+
+.name-task {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+    display: inline;
+    margin: 0; /* Resetar as margens para evitar espaçamento extra */
+    padding: 0; /* Resetar o padding para evitar espaçamento extra */
+}
+
+.btn-del {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+#error{
+    color: red;
+    font-size: 12px;
+}
